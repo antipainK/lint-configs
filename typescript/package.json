@@ -1,6 +1,6 @@
 {
   "name": "@antipain/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Antipain's shared ESLint configuration for modern TypeScript & JavaScript projects",
   "type": "module",
   "main": "./src/index.js",

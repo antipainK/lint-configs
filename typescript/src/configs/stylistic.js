@@ -29,7 +29,7 @@ export default [
             "arrow-body-style": ["error", "as-needed", {requireReturnForObjectLiteral: true}],
             "sort-imports": ["error", {ignoreCase: true, ignoreDeclarationSort: true}],
             "sort-keys": ["warn", "asc", {caseSensitive: false, minKeys: 5}],
-            "yoda": ['warn', 'never', {onlyEquality: true}]
+            "yoda": ['warn', 'never', {onlyEquality: true}],
 
         }
     }

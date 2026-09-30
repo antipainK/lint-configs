@@ -2,6 +2,11 @@ import jsonPlugin from '@eslint/json';
 
 export default [
   {
+    ...jsonPlugin.configs.recommended,
+    files: [ '**/*.json' ],
+    ignores: [ '**/*lock.json' ],
+  },
+  {
     files: [ '**/*.json' ],
     ignores: [ '**/coverage/**' ],
     language: 'json/jsonc',
@@ -10,8 +15,6 @@ export default [
     },
     rules: {
       'json/no-empty-keys': 'error',
-
-
       'json/no-unnormalized-keys': 'error',
       'json/no-unsafe-values': 'error',
       'json/no-duplicate-keys': 'error',

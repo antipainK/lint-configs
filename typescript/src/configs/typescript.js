@@ -13,8 +13,6 @@ export default tseslint.config({
   },
   rules: {
     '@typescript-eslint/ban-ts-comment': 'error',
-
-
     '@typescript-eslint/no-empty-function': 'warn',
     '@typescript-eslint/no-unused-vars': [ 'error', {
       argsIgnorePattern: '^_',

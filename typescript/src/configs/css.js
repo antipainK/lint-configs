@@ -2,6 +2,10 @@ import cssPlugin from '@eslint/css';
 
 export default [
   {
+    ...cssPlugin.configs.recommended,
+    files: [ '**/*.css' ],
+  },
+  {
     files: [ '**/*.css' ],
     language: 'css/css',
     plugins: {

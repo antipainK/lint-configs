@@ -18,6 +18,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 12
 
       - name: Setup Node.js from .node-version
         uses: actions/setup-node@v4

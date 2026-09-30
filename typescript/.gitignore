@@ -1,0 +1,13 @@
+node_modules/
+dist
+build
+.next
+.nuxt
+coverage/
+.pnpm-debug.log*
+.cache
+.turbo
+tmp
+.eslintcache
+*.log
+.DS_Store

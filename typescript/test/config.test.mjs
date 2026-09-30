@@ -1,19 +1,21 @@
 /* eslint-disable no-useless-escape */
 import assert from 'node:assert/strict';
-import {test} from 'node:test';
-import {ESLint} from 'eslint';
-import {css, json, typescript, stylistic} from "../src/index.js"
+import { test } from 'node:test';
+import { ESLint } from 'eslint';
+import { css, json, stylistic, typescript } from '../src/index.js';
 
 async function lintFix(config, code, filepath) {
-    const eslint = new ESLint({fix: true, overrideConfig: config, overrideConfigFile: true});
-    const [result] = await eslint.lintText(code, {filePath: filepath});
-    return result.output ?? code;
+  const eslint = new ESLint({ fix: true, overrideConfig: config, overrideConfigFile: true });
+  const [ result ] = await eslint.lintText(code, { filePath: filepath });
+
+  return result.output ?? code;
 }
 
 async function lint(config, code, filepath) {
-    const eslint = new ESLint({overrideConfig: config, overrideConfigFile: true});
-    const [result] = await eslint.lintText(code, {filePath: filepath});
-    return result.messages;
+  const eslint = new ESLint({ overrideConfig: config, overrideConfigFile: true });
+  const [ result ] = await eslint.lintText(code, { filePath: filepath });
+
+  return result.messages;
 }
 
 // CSS Configuration Test

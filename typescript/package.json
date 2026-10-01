@@ -1,6 +1,6 @@
 {
   "name": "@antipain/eslint-config",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Antipain's shared ESLint configuration for modern TypeScript & JavaScript projects",
   "type": "module",
   "main": "./src/index.js",
@@ -45,13 +45,10 @@
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^2.1.0",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.7",
-    "globals": "^17.12.0",
     "typescript-eslint": "^8.71.0"
   },
   "devDependencies": {
-    "eslint": "^10.11.0"
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0"
   }
 }
